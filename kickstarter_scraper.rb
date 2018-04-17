@@ -27,13 +27,4 @@ def create_project_hash
   end
   projects
 
-  def self.scrape_museums_landing_page
-      museums_landing = Nokogiri::HTML(open("https://www.si.edu/museums"))
-      #museums = []
-
-      name = museums_landing.css("h3.title").text
-      binding.pry
-
-    end
-
 end
